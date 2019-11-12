@@ -1,5 +1,6 @@
 <?php
 
+use App\Tool;
 use Illuminate\Database\Seeder;
 
 class ToolsTableSeeder extends Seeder
@@ -11,6 +12,6 @@ class ToolsTableSeeder extends Seeder
      */
     public function run()
     {
-        //
+        factory(Tool::class, 1)->create();
     }
 }
